@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://192.168.0.10:9123/elgato/lights"
+url = "IPADDRESS:PORT/elgato/lights"
 
 # Application Entry Point
 if __name__ == '__main__':
