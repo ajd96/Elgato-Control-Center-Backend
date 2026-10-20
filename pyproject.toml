@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elgatoctl"
+version = "1.0.0"
+description = "Command-line control of Elgato Key Lights / Light Strips on Linux (mDNS + HTTP, stdlib only)"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "AshleighD" }]
+keywords = ["elgato", "keylight", "key-light", "stream-deck", "mdns", "lighting"]
+# Intentionally empty: the whole tool runs on the standard library only.
+dependencies = []
+
+[project.scripts]
+elgatoctl = "elgatoctl.cli:main"
+
+[tool.setuptools]
+packages = ["elgatoctl"]
